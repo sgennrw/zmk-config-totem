@@ -74,19 +74,19 @@
 
         base {
             bindings = <
-                              &kp Q         &kp W            &kp F            &kp P                    &kp B       &kp J            &kp L                     &kp U             &kp Y             &kp SEMICOLON
-                              &HML LCTRL A  &HML LEFT_ALT R  &HML LEFT_GUI S  &HMShift_L LEFT_SHIFT T  &kp G       &kp M            &HMShift_R RIGHT_SHIFT N  &HMR RIGHT_GUI E  &HMR RIGHT_ALT I  &HMR RCTRL O
-&mt LC(LA(LS(LEFT_GUI))) ESC  &kp Z         &kp X            &kp C            &kp D                    &kp V       &kp K            &kp H                     &kp COMMA         &kp DOT           &kp FSLH       &kp SINGLE_QUOTE
-                                                             &kp TAB          &kp SPACE                &kp LGUI    &lt 2 LG(SPACE)  &lt 1 ENTER               &kp BACKSPACE
+                              &kp Q         &kp W            &kp F            &kp P                    &kp B        &kp J            &kp L                     &kp U             &kp Y             &kp SEMICOLON
+                              &HML LCTRL A  &HML LEFT_ALT R  &HML LEFT_GUI S  &HMShift_L LEFT_SHIFT T  &kp G        &kp M            &HMShift_R RIGHT_SHIFT N  &HMR RIGHT_GUI E  &HMR RIGHT_ALT I  &HMR RCTRL O
+&mt LC(LA(LS(LEFT_GUI))) ESC  &kp Z         &kp X            &kp C            &kp D                    &kp V        &kp K            &kp H                     &kp COMMA         &kp DOT           &kp FSLH       &kp SINGLE_QUOTE
+                                                             &kp TAB          &kp SPACE                &kp LC(W)    &lt 2 LG(SPACE)  &lt 1 ENTER               &kp BACKSPACE
             >;
         };
 
         nav_num {
             bindings = <
-       &kp EXCLAMATION  &kp AT            &kp HASH           &kp DOLLAR            &kp PERCENT              &kp UNDERSCORE  &kp N7  &kp N8         &kp N9  &kp MINUS
-       &kp CARET        &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp N0          &kp N4  &kp N5         &kp N6  &kp EQUAL
-&none  &kp GRAVE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE          &none           &kp N1  &kp N2         &kp N3  &kp BACKSLASH  &kp PLUS
-                                          &trans             &trans                &trans                   &none           &none   &kp BACKSPACE
+                &kp EXCLAMATION  &kp AT            &kp HASH           &kp DOLLAR            &kp PERCENT              &kp UNDERSCORE  &kp N7  &kp N8         &kp N9  &kp MINUS
+                &kp CARET        &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp N0          &kp N4  &kp N5         &kp N6  &kp EQUAL
+&kp LEFT_SHIFT  &kp GRAVE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE          &none           &kp N1  &kp N2         &kp N3  &kp BACKSLASH  &kp PLUS
+                                                   &trans             &trans                &trans                   &none           &none   &kp BACKSPACE
             >;
         };
 
