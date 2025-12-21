@@ -73,28 +73,28 @@
         ctrl_w_h: ctrl_w {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(W) &kp H>;
-            label = "CTRL_W";
+            bindings = <&kp LC(W) &kp H>;
+            label = "CTRL_W_H";
         };
 
         ctrl_w_j: ctrl_w_j {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(W) &kp J>;
+            bindings = <&kp LC(W) &kp J>;
             label = "CTRL_W_J";
         };
 
         ctrl_w_k: ctrl_w_k {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(W) &kp K>;
+            bindings = <&kp LC(W) &kp K>;
             label = "CTRL_W_K";
         };
 
         ctrl_w_l: ctrl_w_l {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(W) &kp L>;
+            bindings = <&kp LC(W) &kp L>;
             label = "CTRL_W_L";
         };
     };
