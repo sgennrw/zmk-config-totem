@@ -69,6 +69,36 @@
         };
     };
 
+    macros {
+        ctrl_w_h: ctrl_w {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(W) &kp H>;
+            label = "CTRL_W";
+        };
+
+        ctrl_w_j: ctrl_w_j {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(W) &kp J>;
+            label = "CTRL_W_J";
+        };
+
+        ctrl_w_k: ctrl_w_k {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(W) &kp K>;
+            label = "CTRL_W_K";
+        };
+
+        ctrl_w_l: ctrl_w_l {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(W) &kp L>;
+            label = "CTRL_W_L";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -92,10 +122,10 @@
 
         sym_func {
             bindings = <
-       &none  &none  &none   &none   &none     &none           &none           &none         &none            &none
-       &none  &none  &none   &none   &none     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none
-&to 4  &none  &none  &none   &none   &none     &none           &none           &none         &none            &none  &none
-                     &trans  &trans  &trans    &none           &none           &none
+       &none      &none      &none      &none      &none     &none           &none           &none         &none            &none
+       &ctrl_w_h  &ctrl_w_j  &ctrl_w_k  &ctrl_w_l  &none     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none
+&to 4  &none      &none      &none      &none      &none     &kp LS(H)       &kp LS(L)       &none         &none            &none  &none
+                             &trans     &trans     &trans    &none           &none           &none
             >;
         };
 
