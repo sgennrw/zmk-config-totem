@@ -162,10 +162,10 @@
 
         base {
             bindings = <
-                    &kp Q         &kp W            &kp F            &kp P                    &kp B           &kp J            &kp L                     &kp U             &kp Y             &kp SEMICOLON
-                    &HML LCTRL A  &HML LEFT_ALT R  &HML LEFT_GUI S  &HMShift_L LEFT_SHIFT T  &kp G           &kp M            &HMShift_R RIGHT_SHIFT N  &HMR RIGHT_GUI E  &HMR RIGHT_ALT I  &HMR RCTRL O
-&mt LEFT_SHIFT ESC  &kp Z         &kp X            &kp C            &kp D                    &kp V           &kp K            &kp H                     &kp COMMA         &kp DOT           &kp FSLH       &kp SINGLE_QUOTE
-                                                   &lt 4 TAB        &kp SPACE                &kp LEFT_GUI    &lt 2 LG(SPACE)  &lt 1 ENTER               &kp BACKSPACE
+           &kp Q         &kp W            &kp F               &kp P      &kp B           &kp J            &kp L        &kp U             &kp Y             &kp SEMICOLON
+           &HML LCTRL A  &HML LEFT_ALT R  &HML LEFT_GUI S     &kp T      &kp G           &kp M            &kp N        &HMR RIGHT_GUI E  &HMR RIGHT_ALT I  &HMR RCTRL O
+&lt 4 ESC  &kp Z         &kp X            &kp C               &kp D      &kp V           &kp K            &kp H        &kp COMMA         &kp DOT           &kp FSLH       &kp SINGLE_QUOTE
+                                          &mt LEFT_SHIFT TAB  &kp SPACE  &kp LEFT_GUI    &lt 2 LG(SPACE)  &lt 1 ENTER  &kp BACKSPACE
             >;
         };
 
@@ -182,7 +182,7 @@
             bindings = <
        &ctrl_w_H  &ctrl_w_J  &ctrl_w_K  &ctrl_w_L  &none    &none           &none           &none         &none            &none
        &ctrl_w_h  &ctrl_w_j  &ctrl_w_k  &ctrl_w_l  &none    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none
-&to 5  &kp LS(H)  &kp LS(L)  &kp LS(J)  &kp LS(K)  &none    &none           &prev_err       &next_err     &code_act        &none  &none
+&to 5  &kp LS(H)  &kp LS(L)  &kp LS(J)  &kp LS(K)  &none    &none           &prev_err       &next_err     &code_act        &none  &kp LC(GRAVE)
                              &none      &none      &none    &none           &none           &none
             >;
         };
