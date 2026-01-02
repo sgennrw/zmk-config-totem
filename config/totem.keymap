@@ -98,32 +98,32 @@
             label = "CTRL_W_L";
         };
 
-        ctrl_w_shift_h: ctrl_w_H {
+        ctrl_w_shift_h: ctrl_w_shift_h {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(W) &kp LS(H)>;
-            label = "CTRL_W_H";
+            label = "ctrl_w_shift_h";
         };
 
-        ctrl_w_shift_j: ctrl_w_J {
+        ctrl_w_shift_j: ctrl_w_shift_j {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(W) &kp LS(J)>;
-            label = "CTRL_W_J";
+            label = "ctrl_w_shift_j";
         };
 
-        ctrl_w_shift_k: ctrl_w_K {
+        ctrl_w_shift_k: ctrl_w_shift_k {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(W) &kp LS(K)>;
-            label = "CTRL_W_K";
+            label = "ctrl_w_shift_k";
         };
 
-        ctrl_w_shift_l: ctrl_w_L {
+        ctrl_w_shift_l: ctrl_w_shift_l {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(W) &kp LS(L)>;
-            label = "CTRL_W_L";
+            label = "ctrl_w_shift_l";
         };
 
         prev_err: prev_err {
