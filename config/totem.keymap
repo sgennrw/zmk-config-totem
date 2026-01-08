@@ -146,6 +146,20 @@
             bindings = <&kp G &kp PERIOD>;
             label = "CODE_ACT";
         };
+
+        resize_inc: resize_inc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(W) &kp PLUS>;
+            label = "RESIZE_INC";
+        };
+
+        resize_dec: resize_dec {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(W) &kp MINUS>;
+            label = "RESIZE_DEC";
+        };
     };
 
     combos {
