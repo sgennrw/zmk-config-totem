@@ -147,18 +147,32 @@
             label = "CODE_ACT";
         };
 
-        resize_inc: resize_inc {
+        inc_height: inc_height {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(W) &kp PLUS>;
-            label = "RESIZE_INC";
+            label = "INC_HEIGHT";
         };
 
-        resize_dec: resize_dec {
+        dec_height: dec_height {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(W) &kp MINUS>;
-            label = "RESIZE_DEC";
+            label = "DEC_HEIGHT";
+        };
+
+        inc_width: inc_width {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(W) &kp GREATER_THAN>;
+            label = "INC_WIDTH";
+        };
+
+        dec_width: dec_width {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(W) &kp LESS_THAN>;
+            label = "DEC_WIDTH";
         };
     };
 
@@ -194,9 +208,9 @@
 
         sym_func {
             bindings = <
-       &ctrl_w_shift_h  &ctrl_w_shift_j  &ctrl_w_shift_k  &ctrl_w_shift_l  &none          &none           &none           &none         &none            &none
-       &ctrl_w_h        &ctrl_w_j        &ctrl_w_k        &ctrl_w_l        &resize_inc    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none
-&to 5  &kp LS(H)        &kp LS(J)        &kp LS(K)        &kp LS(L)        &resize_dec    &none           &prev_err       &next_err     &code_act        &none  &kp LC(GRAVE)
+       &ctrl_w_shift_h  &ctrl_w_shift_j  &ctrl_w_shift_k  &ctrl_w_shift_l  &none          &dec_width      &inc_width      &none         &none            &none
+       &ctrl_w_h        &ctrl_w_j        &ctrl_w_k        &ctrl_w_l        &inc_height    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none
+&to 5  &kp LS(H)        &kp LS(J)        &kp LS(K)        &kp LS(L)        &dec_height    &none           &prev_err       &next_err     &code_act        &none  &kp LC(GRAVE)
                                          &none            &none            &none          &none           &none           &none
             >;
         };
