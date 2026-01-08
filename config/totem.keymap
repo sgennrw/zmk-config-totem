@@ -194,10 +194,10 @@
 
         sym_func {
             bindings = <
-       &ctrl_w_shift_h  &ctrl_w_shift_j  &ctrl_w_shift_k  &ctrl_w_shift_l  &none    &none           &none           &none         &none            &none
-       &ctrl_w_h        &ctrl_w_j        &ctrl_w_k        &ctrl_w_l        &none    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none
-&to 5  &kp LS(H)        &kp LS(J)        &kp LS(K)        &kp LS(L)        &none    &none           &prev_err       &next_err     &code_act        &none  &kp LC(GRAVE)
-                                         &none            &none            &none    &none           &none           &none
+       &ctrl_w_shift_h  &ctrl_w_shift_j  &ctrl_w_shift_k  &ctrl_w_shift_l  &none          &none           &none           &none         &none            &none
+       &ctrl_w_h        &ctrl_w_j        &ctrl_w_k        &ctrl_w_l        &resize_inc    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none
+&to 5  &kp LS(H)        &kp LS(J)        &kp LS(K)        &kp LS(L)        &resize_dec    &none           &prev_err       &next_err     &code_act        &none  &kp LC(GRAVE)
+                                         &none            &none            &none          &none           &none           &none
             >;
         };
 
